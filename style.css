@@ -257,7 +257,7 @@
   
   /* Make publication images 20% larger on desktop */
   .publication-item img {
-    max-width: 120px !important;
+    max-width: 160px !important;
   }
   
   /* Fix profile icons to be square on desktop */

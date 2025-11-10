@@ -41,25 +41,46 @@
   }
   
   /* ===== PUBLICATIONS PAGE ===== */
-  /* Make publication thumbnails larger on mobile */
+  /* Stack publication layout vertically like members page */
+  .publication-item .row {
+    flex-direction: column !important;
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .publication-item .col-2,
+  .publication-item .col-10 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Center and enlarge publication thumbnail */
   .publication-item .col-2 {
-    flex: 0 0 25% !important;
-    max-width: 25% !important;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .publication-item img {
+    max-width: 120px !important;
+    width: 120px !important;
+    margin: 0 auto;
+  }
+  
+  /* Center all publication text */
+  .publication-item .col-10 {
+    text-align: center !important;
   }
   
   /* Adjust publication title size */
   .publication-item h5 {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
+    margin-bottom: 0.75rem !important;
   }
   
   /* Adjust publication author text */
   .publication-item p {
     font-size: 0.85rem !important;
-  }
-  
-  /* Stack publication items better on small screens */
-  .publication-item .row {
-    margin-bottom: 1rem !important;
   }
   
   /* ===== MEMBERS PAGE ===== */
@@ -96,9 +117,10 @@
   }
   
   /* ===== NEWS BOX ===== */
-  /* Reduce news box height on mobile */
+  /* Make news box non-scrollable on mobile - expand to fit content */
   .news-box {
-    max-height: 300px !important;
+    max-height: none !important;
+    overflow-y: visible !important;
     margin-bottom: 2rem;
   }
   
@@ -152,17 +174,17 @@
   
   /* Even smaller text for very small screens */
   .publication-item h5 {
-    font-size: 0.9rem !important;
+    font-size: 1rem !important;
   }
   
   .publication-item p {
-    font-size: 0.75rem !important;
+    font-size: 0.8rem !important;
   }
   
-  /* Make publication thumbnails even larger on very small screens */
-  .publication-item .col-2 {
-    flex: 0 0 30% !important;
-    max-width: 30% !important;
+  /* Slightly smaller publication thumbnails on very small screens */
+  .publication-item img {
+    max-width: 100px !important;
+    width: 100px !important;
   }
   
   /* Reduce logo sizes further */
@@ -213,6 +235,14 @@
 /* ============================================
    IMPROVEMENTS FOR ALL SCREEN SIZES
    ============================================ */
+
+/* News box desktop behavior - keep scrollable on large screens */
+@media (min-width: 769px) {
+  .news-box {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+}
 
 /* Smooth scrolling */
 html {

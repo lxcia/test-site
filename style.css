@@ -247,11 +247,26 @@
    IMPROVEMENTS FOR ALL SCREEN SIZES
    ============================================ */
 
-/* News box desktop behavior - keep scrollable on large screens */
+/* Desktop-specific styles (769px and above) */
 @media (min-width: 769px) {
+  /* News box desktop behavior - keep scrollable on large screens */
   .news-box {
     max-height: 400px;
     overflow-y: auto;
+  }
+  
+  /* Make publication images 20% larger on desktop */
+  .publication-item img {
+    max-width: 120px !important;
+  }
+  
+  /* Fix profile icons to be square on desktop */
+  .profile-icons a {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -278,11 +293,12 @@ a {
 
 /* Improve button tap targets on mobile */
 .join-btn,
-.profile-icons a,
 .nav-link {
   min-height: 44px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
+
+/* Profile icons need specific dimensions (set in inline styles and above) */
 

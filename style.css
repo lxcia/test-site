@@ -42,45 +42,60 @@
   
   /* ===== PUBLICATIONS PAGE ===== */
   /* Stack publication layout vertically like members page */
+  .publication-item {
+    margin-bottom: 3rem !important;
+    width: 100% !important;
+  }
+  
   .publication-item .row {
     flex-direction: column !important;
     text-align: center !important;
-    margin-bottom: 2rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
   }
   
   .publication-item .col-2,
   .publication-item .col-10 {
     flex: 0 0 100% !important;
     max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   
-  /* Center and enlarge publication thumbnail */
+  /* Make publication thumbnail full width like profile photos */
   .publication-item .col-2 {
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 1.5rem;
   }
   
   .publication-item img {
-    max-width: 120px !important;
-    width: 120px !important;
-    margin: 0 auto;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0;
+    display: block;
+    border-radius: 8px;
   }
   
   /* Center all publication text */
   .publication-item .col-10 {
     text-align: center !important;
+    padding: 0 !important;
+    width: 100% !important;
   }
   
   /* Adjust publication title size */
   .publication-item h5 {
     font-size: 1.1rem !important;
     margin-bottom: 0.75rem !important;
+    width: 100% !important;
   }
   
   /* Adjust publication author text */
   .publication-item p {
     font-size: 0.85rem !important;
+    width: 100% !important;
   }
   
   /* ===== MEMBERS PAGE ===== */
@@ -181,11 +196,7 @@
     font-size: 0.8rem !important;
   }
   
-  /* Slightly smaller publication thumbnails on very small screens */
-  .publication-item img {
-    max-width: 100px !important;
-    width: 100px !important;
-  }
+  /* Publication images remain full width on very small screens */
   
   /* Reduce logo sizes further */
   .lab-logos img {

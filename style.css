@@ -262,15 +262,15 @@
   
   /* Adjust publication column widths to accommodate larger images */
   .publication-item .col-2 {
-    flex: 0 0 20% !important;
-    max-width: 20% !important;
-    padding-right: 1.5rem !important;
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+    padding-right: 2rem !important;
   }
   
   .publication-item .col-10 {
-    flex: 0 0 80% !important;
-    max-width: 80% !important;
-    padding-left: 0.5rem !important;
+    flex: 0 0 75% !important;
+    max-width: 75% !important;
+    padding-left: 1rem !important;
   }
   
   /* Fix profile icons to be square on desktop */

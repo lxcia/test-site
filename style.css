@@ -255,9 +255,20 @@
     overflow-y: auto;
   }
   
-  /* Make publication images 20% larger on desktop */
+  /* Make publication images larger on desktop */
   .publication-item img {
     max-width: 160px !important;
+  }
+  
+  /* Adjust publication column widths to accommodate larger images */
+  .publication-item .col-2 {
+    flex: 0 0 20% !important;
+    max-width: 20% !important;
+  }
+  
+  .publication-item .col-10 {
+    flex: 0 0 80% !important;
+    max-width: 80% !important;
   }
   
   /* Fix profile icons to be square on desktop */

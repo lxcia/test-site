@@ -1,19 +1,19 @@
 // News data - update this file to add new news items
 const newsData = [
   {
-    date: "Sep 2025",
-    title: "New publication accepted at NeurIPS!",
-    description: "Our paper on multimodal AI for pathology diagnosis has been accepted for presentation at the conference (THIS IS A SAMPLE)."
+    date: "Nov 2025",
+    title: "Two papers published in the latest issue of Radiology: Artificial Intelligence",
+    description: 'Read more about our work on <a href="https://pubs.rsna.org/doi/10.1148/ryai.250369" class="text-decoration-none">FDA pathways for AI-enabled medical devices</a> and the <a href="https://pubs.rsna.org/doi/full/10.1148/ryai.240861" class="text-decoration-none">impact of acquisition parameters on AI and radiologist performance</a>.'
   },
   {
-    date: "Aug 2025", 
-    title: "We welcomed new PhD students to the lab",
-    description: "Three new graduate students joined our research group to work on computational biology projects (THIS IS A SAMPLE)."
+    date: "Oct 2025", 
+    title: "Four papers accepted for presentation at ML4H 2025",
+    description: 'Read about this research and more <a href="research.html" style="text-decoration: none;">here</a>.'
   },
   {
-    date: "Jun 2025",
-    title: "Our PI received an NIH award for multimodal AI research", 
-    description: "The $2M grant will support our work on integrating imaging and genomic data for cancer research (THIS IS A SAMPLE)."
+    date: "Sept 2025",
+    title: "New R01 awarded to support our work in spatial biology", 
+    description: "We’re excited to advance AI methods for spatial proteomics and transcriptomics data."
   }
 ];
 
